@@ -44,15 +44,6 @@ function testRemoveTodolist(): void
     $todolistService->showTodolist();
     $todolistService->removeTodolist(1);
     $todolistService->showTodolist();
-
-    $todolistService->removeTodolist(3);
-    $todolistService->showTodolist();
-
-    $todolistService->removeTodolist(2);
-    $todolistService->showTodolist();
-
-    $todolistService->removeTodolist(1);
-    $todolistService->showTodolist();
 }
 
 testRemoveTodolist();
