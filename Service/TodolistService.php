@@ -40,7 +40,11 @@ namespace Service {
 
         function removeTodolist(int $number): void
         {
-            //
+            if ($this->todolistRepository->remove($number)) {
+                echo "Sukses Hapus TODOLIST" . PHP_EOL;
+            } else {
+                echo "Gagal Hapus TODOLIST" . PHP_EOL;
+            }
         }
     }
 }
