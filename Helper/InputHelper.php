@@ -6,7 +6,7 @@ namespace Helper {
 
         static function input(string $info): string
         {
-            echo "info : ";
+            echo "$info : ";
             $result = fgets(STDIN);
             return trim($result);
         }
