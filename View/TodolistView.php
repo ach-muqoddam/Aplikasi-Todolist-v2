@@ -65,14 +65,7 @@ namespace View {
                 echo "batal menghapus todo" . PHP_EOL;
             } else {   
                 // cek berhasil atau gagal saat dihapus
-                $success = $this->todolistService->removeTodoList($pilihan);
-
-                // cek kondisi untuk melakukan penghapusan
-                if ($success) {
-                    echo "sukses menghapus todo nomor $pilihan" . PHP_EOL;
-                } else {
-                    echo "nomer $pilihan tidak ada di list todo" . PHP_EOL;
-                }
+                $this->todolistService->removeTodolist($pilihan);
             }
 
         }
